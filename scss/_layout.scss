@@ -4,22 +4,6 @@ header{
   align-items: center;
   justify-content: space-between;
   color: $light-color;
-
-  .header-logo{
-
-    margin-left: 44px;
-    a{
-      display: block;
-      background-image: url(/photo/logo-new_工作區域1.png);
-      width: 80px;
-      height: 49px;
-      text-indent: 101%;
-      white-space: nowrap;
-      overflow: hidden;
-      background-size: cover;
-      } 
-    }
-  
   a{
     text-decoration: none;
     color: $light-color;
@@ -32,8 +16,66 @@ header{
       margin: 40px 44px 40px 0;
     }
   }
-}
 
+  //漢堡選單start
+ #bar{
+   opacity: 0;
+   position: absolute;
+   &:checked ~ ul{
+     left: 0;
+   }
+ }
+ label,img{
+   display: none;
+ }
+
+ @media screen and (max-width:768px){
+  label,img,h1,label{
+    display: block;
+    z-index: 2;
+  }
+  
+    ul{
+      display: block;
+      flex-direction: column;
+      position: absolute;
+      top: 49px;
+      left: -1000px;
+      transition: all 1s;
+      background-color:$red-color;
+      width: 100%;
+      text-align: center;
+      
+      
+   }
+   li{
+      width: 100%;
+      border-top: 1px solid $light-color;
+   }
+   .header-logo{
+     a{
+        margin: 10px 0;
+     }
+   }
+
+ }
+ //漢堡選單end
+
+
+  .header-logo{
+    margin-left: 44px;
+    a{
+      display: block;
+      background-image: url(/photo/logo-new_工作區域1.png);
+      width: 80px;
+      height: 49px;
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-size: cover;
+    } 
+  }
+}
 
 
 
@@ -45,9 +87,8 @@ footer{
 
   margin-top: 100px;
 
-
   .container{
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     a{
       text-decoration: none;
@@ -73,7 +114,6 @@ footer{
 
     .line{
       width: 100%;
-      height: 20%;
       border-top: 1px solid $light-color;
     }
     span{
