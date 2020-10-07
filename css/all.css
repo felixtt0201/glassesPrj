@@ -3,6 +3,9 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,6 +27,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif,'Noto Sans', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -64,5 +68,228 @@ img {
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+header {
+  background-color: #AA0601;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #FBF2F2;
+}
+
+header a {
+  text-decoration: none;
+  color: #FBF2F2;
+  font-size: 20px;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  margin: 40px 44px 40px 0;
+}
+
+header #bar {
+  opacity: 0;
+  position: absolute;
+}
+
+header #bar:checked ~ ul {
+  left: 0;
+}
+
+header label, header img {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header label, header img, header h1, header label {
+    display: block;
+    z-index: 2;
+  }
+  header ul {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 49px;
+    left: -1000px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    background-color: #AA0601;
+    width: 100%;
+    text-align: center;
+  }
+  header li {
+    width: 100%;
+    border-top: 1px solid #FBF2F2;
+  }
+  header .header-logo a {
+    margin: 10px 0;
+  }
+}
+
+header .header-logo {
+  margin-left: 44px;
+}
+
+header .header-logo a {
+  display: block;
+  background-image: url(/photo/logo-new_工作區域1.png);
+  width: 80px;
+  height: 49px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: cover;
+}
+
+footer {
+  background-color: #AA0601;
+  color: #FBF2F2;
+  margin-top: 100px;
+}
+
+footer .container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+footer .container a {
+  text-decoration: none;
+  color: #FBF2F2;
+}
+
+footer .container li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 0;
+}
+
+footer .container li ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .container li .step-link li {
+  margin-right: 20px;
+}
+
+footer .container li .step-social li {
+  margin-left: 20px;
+}
+
+footer .container .line {
+  width: 100%;
+  border-top: 1px solid #FBF2F2;
+}
+
+footer .container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding-bottom: 12px;
+  font-size: 30px;
+}
+
+footer .container span img {
+  margin-right: 10px;
+}
+
+footer .container .copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .container .copyright img {
+  width: 80px;
+  height: 49px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer .container .copyright p {
+  padding-left: 30px;
+}
+
+* {
+  font-family: 'Roboto', 'Noto Sans TC', sans-serif !important;
+}
+
+.glasses_menu {
+  font-weight: 500;
+  height: 103px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.glasses_menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 42px;
+  width: 462px;
+}
+
+.glasses_menu .optical img {
+  height: 38px;
+  margin-right: 8px;
+}
+
+.glasses_menu .sunclasses img {
+  height: 48px;
+  margin-right: 8px;
+}
+
+.glasses_menu .functional img {
+  height: 48px;
+  margin-right: 8px;
 }
 /*# sourceMappingURL=all.css.map */

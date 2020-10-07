@@ -1,0 +1,145 @@
+header{
+  background-color: $red-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $light-color;
+  a{
+    text-decoration: none;
+    color: $light-color;
+    font-size: 20px;
+  }
+
+  ul{
+    display: flex;
+    li{
+      margin: 40px 44px 40px 0;
+    }
+  }
+
+  //漢堡選單start
+ #bar{
+   opacity: 0;
+   position: absolute;
+   &:checked ~ ul{
+     left: 0;
+   }
+ }
+ label,img{
+   display: none;
+ }
+
+ @media screen and (max-width:768px){
+  label,img,h1,label{
+    display: block;
+    z-index: 2;
+  }
+  
+    ul{
+      display: block;
+      flex-direction: column;
+      position: absolute;
+      top: 49px;
+      left: -1000px;
+      transition: all 1s;
+      background-color:$red-color;
+      width: 100%;
+      text-align: center;
+      
+      
+   }
+   li{
+      width: 100%;
+      border-top: 1px solid $light-color;
+   }
+   .header-logo{
+     a{
+        margin: 10px 0;
+     }
+   }
+
+ }
+ //漢堡選單end
+
+
+  .header-logo{
+    margin-left: 44px;
+    a{
+      display: block;
+      background-image: url(/photo/logo-new_工作區域1.png);
+      width: 80px;
+      height: 49px;
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden;
+      background-size: cover;
+    } 
+  }
+}
+
+
+
+
+footer{
+  background-color: $red-color;
+  color: $light-color;
+
+
+  margin-top: 100px;
+
+  .container{
+    max-width: 1110px;
+    margin: 0 auto;
+    a{
+      text-decoration: none;
+      color: $light-color;
+    }
+    li{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      ul{
+        display: flex;
+        justify-content: center;
+      }
+      .step-link li{
+        margin-right: 20px;
+      }
+      .step-social li{
+        margin-left: 20px;
+      }
+    }
+
+    .line{
+      width: 100%;
+      border-top: 1px solid $light-color;
+    }
+    span{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      padding-bottom: 12px;
+      font-size: 30px;
+      img{
+        margin-right: 10px;
+      }
+    }
+    
+      .copyright{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+          width: 80px;
+          height: 49px;
+          object-fit: cover;
+          }
+        p{
+          padding-left: 30px;
+        }
+      }   
+  }
+  
+}
