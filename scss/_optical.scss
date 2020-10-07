@@ -1,19 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
-*{
-  font-family: 'Roboto', 'Noto Sans TC', sans-serif !important;
+.opt_container{
+  max-width: 1920px;
+  margin: 0 auto;
 }
 .glasses_menu {
+  a{
+    text-decoration: none;
+    color: #000;
+  }
   font-weight: 500;
   height: 103px;
   display: flex;
   justify-content: center;
-  li {
+  .optical,.sunclasses,.functional {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 42px;
     width: 462px;
+    border: 1px solid $light_border_color;
+    &:hover{
+      border-bottom: 16px solid $red-color;
+    }
+  }
+  .optical,.sunclasses{
+    border-right: none;
   }
   .optical img{
     height: 38px;
@@ -27,4 +37,146 @@
     height: 48px;
     margin-right: 8px;
   }
+}
+.opt_banner{
+  display: flex;
+  justify-content: space-between;
+  height: 309px;
+  li {
+    width: 945px;
+    height: 309px;
+  }
+  .opt_photo1 {
+    background-image: url('/photo/sincerely-media-FY6-bWUun9Q-unsplash.jpg');
+    background-size: cover;
+    background-position: 50% 58% ;
+    margin-right: 30px;
+  }
+  .opt_photo2 {
+    background-image: url('/photo/flemming-fuchs-zisRjTikZWU-unsplash.jpg');
+    background-size: cover;
+    background-position: 50% 30% ;
+  }
+}
+.opt_product_content{
+  width: 1110px;
+  margin: 0 auto;
+}
+.opt_eng_title{
+  text-align: center;
+  font-size: 42px;
+  margin-top: 88px;
+  margin-bottom: 20px;
+}
+.opt_chinese_title{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.opt_products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.opt_product{
+  width: 255px;
+  margin-bottom: 104px;
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+}
+.opt_product_photo{
+  height: 164px;
+  background-size: cover;
+  margin-bottom: 2px;
+}
+.photo_001 {
+  background-image: url('/photo/sincerely-media-d05w6_7FaPM-unsplash.jpg');
+}
+.photo_002{
+  background-image: url('/photo/2.jpg');
+}
+.photo_003{
+  background-image: url('/photo/3.jpg');
+}
+.photo_004{
+  background-image: url('/photo/4.jpg');
+}
+.photo_005{
+  background-image: url('/photo/5.jpg');
+}
+.photo_006{
+  background-image: url('/photo/6.jpg');
+}
+.product_number{
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+  &:hover{
+    color: #84828E;
+  }
+  .price {
+    font-weight: 500;
+    color: $red_color;
+    font-size: 24px;
+  }
+}
+.sample_color_block {
+  display: flex;
+}
+.sample_block1{
+  width: 24px;
+  height: 24px;
+  background-color: $sample_purple;
+  border-radius: 4px;
+  margin-top: 12px;
+  margin-right: 8px;
+}
+.sample_block2{
+  width: 24px;
+  height: 24px;
+  background-color: $sample_red;
+  border-radius: 4px;
+  margin-top: 12px;
+}
+
+/* 分頁 */
+.page_bar {
+  justify-content: center;
+  display: flex;
+  font-size: 19px;
+  li {
+    border: 1px solid $border_color;
+    margin:-1px 0 0 -1px;
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      color: #000;
+      &:hover{
+        color: #FFF;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #000; 
+     }
+  }
+
+}
+.back_page,.next_page{
+  width: 81px;
+  height: 48px;
+}
+.next_page{
+  background-color: $gray_color;
+}
+.pages{
+  width: 41px;
+  height: 48px;
+  font-size: 18px;
 }
