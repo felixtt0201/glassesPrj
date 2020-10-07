@@ -3,9 +3,14 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+<<<<<<< HEAD
 @import url(https://fonts.google.com/specimen/Roboto?query=roboto);
 @import url(https://fonts.google.com/specimen/Noto+Sans?query=san);
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+=======
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+>>>>>>> origin/dev
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,6 +32,7 @@ time, mark, audio, video {
   vertical-align: baseline;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Roboto', sans-serif,'Noto Sans', sans-serif;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -83,21 +89,6 @@ header {
   color: #FBF2F2;
 }
 
-header .header-logo {
-  margin-left: 44px;
-}
-
-header .header-logo a {
-  display: block;
-  background-image: url(/photo/logo-new_工作區域1.png);
-  width: 80px;
-  height: 49px;
-  text-indent: 101%;
-  white-space: nowrap;
-  overflow: hidden;
-  background-size: cover;
-}
-
 header a {
   text-decoration: none;
   color: #FBF2F2;
@@ -114,6 +105,63 @@ header ul li {
   margin: 40px 44px 40px 0;
 }
 
+header #bar {
+  opacity: 0;
+  position: absolute;
+}
+
+header #bar:checked ~ ul {
+  left: 0;
+}
+
+header label, header img {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  header label, header img, header h1, header label {
+    display: block;
+    z-index: 2;
+  }
+  header ul {
+    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 49px;
+    left: -1000px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    background-color: #AA0601;
+    width: 100%;
+    text-align: center;
+  }
+  header li {
+    width: 100%;
+    border-top: 1px solid #FBF2F2;
+  }
+  header .header-logo a {
+    margin: 10px 0;
+  }
+}
+
+header .header-logo {
+  margin-left: 44px;
+}
+
+header .header-logo a {
+  display: block;
+  background-image: url(/photo/logo-new_工作區域1.png);
+  width: 80px;
+  height: 49px;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+  background-size: cover;
+}
+
 footer {
   background-color: #AA0601;
   color: #FBF2F2;
@@ -121,7 +169,7 @@ footer {
 }
 
 footer .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
 
@@ -164,7 +212,6 @@ footer .container li .step-social li {
 
 footer .container .line {
   width: 100%;
-  height: 20%;
   border-top: 1px solid #FBF2F2;
 }
 
