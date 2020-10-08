@@ -307,126 +307,6 @@ footer .container .copyright p {
   margin-right: 8px;
 }
 
-.container {
-  max-width: 1110px;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-.blog-header {
-  background-color: #650300;
-}
-
-.blog-header .container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.blog-header .container ul li {
-  margin: 10px 0;
-  padding-right: 24px;
-}
-
-.blog-header .container ul li a {
-  color: #FBF2F2;
-}
-
-.container .main li {
-  margin: 30px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.container .main li img {
-  margin-right: 50px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.container .main .text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-}
-
-.container .main .text .title h2 {
-  color: #650300;
-  font-size: 32px;
-}
-
-.container .main .text .title .date {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 10px 0;
-}
-
-.container .main .text .title .date span:first-child {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.container .main .text .ph {
-  line-height: 30px;
-}
-
-.container .main .text a {
-  display: block;
-  font-size: 30px;
-  color: #650300;
-  font-weight: bold;
-  text-align: right;
-}
-
-.container .pagelist {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 50px 0;
-}
-
-.container .pagelist li a {
-  margin: 0px -1px -1px 0px;
-  border: 1px solid #555555;
-  padding: 10px 15px;
-  color: #555555;
-  font-size: 20px;
-}
-
-.container .pagelist li a:hover {
-  background-color: #000;
-  color: #ffff;
-}
 .opt_banner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -435,7 +315,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 309px;
-  }
+}
 
 .opt_banner li {
   width: 945px;
@@ -621,5 +501,158 @@ a {
   width: 41px;
   height: 48px;
   font-size: 18px;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.blog-header {
+  background-color: #650300;
+}
+
+.blog-header .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.blog-header .container ul li {
+  margin: 10px 0;
+  padding-right: 24px;
+}
+
+.blog-header .container ul li a {
+  color: #FBF2F2;
+}
+
+.container .main li {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .main li img {
+  margin-right: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .main .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.container .main .text .title h2 {
+  color: #650300;
+  font-size: 32px;
+}
+
+.container .main .text .title .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+}
+
+.container .main .text .title .date span:first-child {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container .main .text .ph {
+  line-height: 30px;
+}
+
+.container .main .text a {
+  display: block;
+  font-size: 30px;
+  color: #650300;
+  font-weight: bold;
+  text-align: right;
+}
+
+.container .pagelist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+.container .pagelist li a {
+  margin: 0px -1px -1px 0px;
+  border: 1px solid #555555;
+  padding: 10px 15px;
+  color: #555555;
+  font-size: 20px;
+}
+
+.container .pagelist li a:hover {
+  background-color: #000;
+  color: #ffff;
+}
+
+.banner .FAQ-title {
+  font-size: 48px;
+  margin-top: -68px;
+}
+
+.banner .FAQ-title img {
+  margin-bottom: -10px;
+}
+
+.container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.container h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.container .FAQ-list {
+  display: block;
+  margin-bottom: 642px;
+}
+
+.container .FAQ-list p {
+  margin: 0 95px;
+  margin-bottom: 40px;
 }
 /*# sourceMappingURL=all.css.map */
