@@ -1,0 +1,82 @@
+.sun_photo1 {
+  background-image: url('/photo/sabaku_megane.jpg');
+  background-size: cover;
+  background-position: 50% 58% ;
+  margin-right: 30px;
+}
+.sun_photo2 {
+  background-image: url('/photo/meganeOnna.jpg');
+  background-size: cover;
+  background-position: 50% 20% ;
+}
+.sun_eng_title{
+  text-align: center;
+  font-size: 42px;
+  margin-top: 88px;
+  margin-bottom: 20px;
+}
+.sun_tw_title{
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 45px;
+}
+.sun_products_content{
+  max-width: 1110px;
+  margin: 0 auto;
+  margin-bottom: 195px;
+}
+.sun_products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  a {
+    color: #000;
+  &:hover{
+    color: $text_hoverColor;
+  }
+  }
+}
+.sun_product {
+  width: 350px;
+  margin-bottom: 110px;
+}
+.sun_photo {
+  height: 224px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sun_p1 {
+  background-image: url(/photo/sun1.jpg);
+}
+.sun_p2{
+  background-image: url(/photo/sun2.jpg);
+}
+.sun_p3{
+  background-image: url(/photo/sun3.png);
+}
+.sun_p4{
+  background-image: url(/photo/sun4.jpg);
+}
+.sun_p5{
+  background-image: url(/photo/sun5.jpg);
+}
+.sun_p6{
+  background-image: url(/photo/sun6.jpg);
+}
+.sun_product_name{
+  font-size: 18px;
+  margin-top: 6px;
+  .sun_price{
+    display: block;
+    font-weight: 500;
+    color: $red_color;
+    margin-top: 11px;
+  }
+}
+.sun_block1,.sun_block2 {
+  height: 18px;
+  width: 18px;
+}
+.sun_block {
+  display: flex;
+}
